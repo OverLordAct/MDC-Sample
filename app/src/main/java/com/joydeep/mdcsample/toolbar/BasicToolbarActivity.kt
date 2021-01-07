@@ -2,7 +2,9 @@ package com.joydeep.mdcsample.toolbar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.joydeep.materialdesignsample.utils.showToast
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.joydeep.mdcsample.adapter.RecyclerAdapter
+import com.joydeep.mdcsample.utils.showToast
 import com.joydeep.mdcsample.R
 import kotlinx.android.synthetic.main.activity_basic_toolbar.*
 
@@ -39,6 +41,11 @@ class BasicToolbarActivity : AppCompatActivity() {
                 }
                 else -> false
             }
+        }
+
+        recycler.apply {
+            layoutManager = LinearLayoutManager(this@BasicToolbarActivity, LinearLayoutManager.VERTICAL, false)
+            adapter = RecyclerAdapter()
         }
     }
 }

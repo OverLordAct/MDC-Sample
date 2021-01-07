@@ -1,4 +1,4 @@
-package com.joydeep.materialdesignsample.utils
+package com.joydeep.mdcsample.utils
 
 import android.content.Context
 import android.widget.Toast

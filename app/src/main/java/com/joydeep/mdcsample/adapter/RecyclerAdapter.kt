@@ -1,4 +1,4 @@
-package com.joydeep.materialdesignsample.adapter
+package com.joydeep.mdcsample.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
