@@ -40,5 +40,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/buttonScrollingToolbar" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonImageCollapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Collapsing Image Toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonCollapsingToolbar" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
