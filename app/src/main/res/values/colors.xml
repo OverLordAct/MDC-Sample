@@ -8,16 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="color_1">#D50000</color>
-    <color name="color_2">#C51162</color>
-    <color name="color_3">#AA00FF</color>
-    <color name="color_4">#6200EA</color>
-    <color name="color_5">#304FFE</color>
-    <color name="color_6">#00BFA5</color>
-    <color name="color_7">#00C853</color>
-    <color name="color_8">#64DD17</color>
+    <color name="color_1">#304FFE</color>
+    <color name="color_2">#00C853</color>
+    <color name="color_3">#D3A9E8</color>
+    <color name="color_4">#07EAB4</color>
+    <color name="color_5">#A3CA16</color>
+    <color name="color_6">#D61B46</color>
+    <color name="color_7">#FBF1F3</color>
+    <color name="color_8">#FFAB00</color>
     <color name="color_9">#FFD600</color>
     <color name="color_10">#FF6D00</color>
-    <color name="color_11">#DD2C00</color>
+    <color name="color_11">#F81515</color>
     <color name="color_12">#000000</color>
 </resources>
