@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.joydeep.mdcsample.databinding.ActivityMainBinding
 import com.joydeep.mdcsample.toolbar.BasicToolbarActivity
+import com.joydeep.mdcsample.toolbar.CollapsingToolbarActivity
 import com.joydeep.mdcsample.toolbar.ScrollingToolbarActivity
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +27,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonScrollingToolbar.setOnClickListener {
             startActivity(Intent(this, ScrollingToolbarActivity::class.java))
+        }
+
+        binding.buttonCollapsingToolbar.setOnClickListener {
+            startActivity(Intent(this, CollapsingToolbarActivity::class.java))
         }
     }
 }
