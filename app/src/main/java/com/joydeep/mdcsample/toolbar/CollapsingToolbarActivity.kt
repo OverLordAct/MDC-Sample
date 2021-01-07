@@ -3,19 +3,19 @@ package com.joydeep.mdcsample.toolbar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.joydeep.mdcsample.adapter.RecyclerAdapter
-import com.joydeep.mdcsample.utils.showToast
 import com.joydeep.mdcsample.R
-import com.joydeep.mdcsample.databinding.ActivityBasicToolbarBinding
+import com.joydeep.mdcsample.adapter.RecyclerAdapter
+import com.joydeep.mdcsample.databinding.ActivityCollapsingToolbarBinding
+import com.joydeep.mdcsample.utils.showToast
 import kotlinx.android.synthetic.main.activity_basic_toolbar.*
 
-class BasicToolbarActivity : AppCompatActivity() {
+class CollapsingToolbarActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityBasicToolbarBinding
+    private lateinit var binding: ActivityCollapsingToolbarBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityBasicToolbarBinding.inflate(layoutInflater)
+        binding = ActivityCollapsingToolbarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setView()
@@ -53,7 +53,7 @@ class BasicToolbarActivity : AppCompatActivity() {
         }
 
         binding.recycler.apply {
-            layoutManager = LinearLayoutManager(this@BasicToolbarActivity, LinearLayoutManager.VERTICAL, false)
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter = RecyclerAdapter()
         }
     }

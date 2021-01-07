@@ -1,23 +1,41 @@
 package com.joydeep.mdcsample
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.joydeep.mdcsample.databinding.ActivityMainBinding
 import com.joydeep.mdcsample.toolbar.BasicToolbarActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import com.joydeep.mdcsample.toolbar.CollapsingToolbarActivity
+import com.joydeep.mdcsample.toolbar.CollapsingToolbarImageActivity
+import com.joydeep.mdcsample.toolbar.ScrollingToolbarActivity
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         setOnClickListener()
     }
 
     private fun setOnClickListener() {
-        buttonRegularToolbar.setOnClickListener {
+        binding.buttonRegularToolbar.setOnClickListener {
             startActivity(Intent(this, BasicToolbarActivity::class.java))
         }
 
+        binding.buttonScrollingToolbar.setOnClickListener {
+            startActivity(Intent(this, ScrollingToolbarActivity::class.java))
+        }
+
+        binding.buttonCollapsingToolbar.setOnClickListener {
+            startActivity(Intent(this, CollapsingToolbarActivity::class.java))
+        }
+
+        binding.buttonImageCollapsingToolbar.setOnClickListener {
+            startActivity(Intent(this, CollapsingToolbarImageActivity::class.java))
+        }
     }
 }

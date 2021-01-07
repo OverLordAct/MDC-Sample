@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
     android:fitsSystemWindows="true"
-    tools:context=".toolbar.BasicToolbarActivity">
+    tools:context=".toolbar.ScrollingToolbarActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/regularToolbarLayout"
@@ -20,7 +20,9 @@
             android:layout_height="?attr/actionBarSize"
             app:title="@string/app_name"
             app:menu="@menu/toolbar_main_menu"
-            app:navigationIcon="@drawable/abc_vector_test" />
+            app:navigationIcon="@drawable/abc_vector_test"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            />
 
     </com.google.android.material.appbar.AppBarLayout>
 
