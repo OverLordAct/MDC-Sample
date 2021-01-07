@@ -32,6 +32,10 @@
         <item name="popupTheme">@style/Widget.MDCSample.Popup</item>
     </style>
 
+    <style name="ThemeOverlay.MDCSample.Toolbar.Custom" parent="">
+        <item name="colorPrimary">?android:colorBackground</item>
+    </style>
+
     <style name="Widget.MDCSample.Popup" parent="ThemeOverlay.MaterialComponents">
         <item name="textAppearanceSubtitle1">@style/TextAppearance.MDCSample.Subtitle1
         </item>

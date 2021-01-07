@@ -12,6 +12,7 @@
         android:id="@+id/regularToolbarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:liftOnScroll="true"
         android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.MaterialToolbar
@@ -20,13 +21,15 @@
             android:layout_height="?attr/actionBarSize"
             app:title="@string/app_name"
             app:menu="@menu/toolbar_main_menu"
-            app:navigationIcon="@drawable/abc_vector_test" />
+            app:navigationIcon="@drawable/abc_vector_test"
+            android:theme="@style/ThemeOverlay.MDCSample.Toolbar.Custom"
+            />
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

@@ -5,10 +5,12 @@
         android:id="@+id/icon_1"
         android:icon="@drawable/abc_vector_test"
         android:title="Title 1"
+        android:iconTint="?attr/colorOnError"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/icon_2"
         android:icon="@drawable/abc_vector_test"
+        android:iconTint="?attr/colorOnError"
         android:title="Title 1"
         app:showAsAction="ifRoom" />
     <item

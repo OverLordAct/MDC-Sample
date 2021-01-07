@@ -1,12 +1,13 @@
 package com.joydeep.mdcsample.toolbar
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.joydeep.mdcsample.adapter.RecyclerAdapter
-import com.joydeep.mdcsample.utils.showToast
 import com.joydeep.mdcsample.R
+import com.joydeep.mdcsample.adapter.ItemDecoration
+import com.joydeep.mdcsample.adapter.RecyclerAdapter
 import com.joydeep.mdcsample.databinding.ActivityBasicToolbarBinding
+import com.joydeep.mdcsample.utils.showToast
 import kotlinx.android.synthetic.main.activity_basic_toolbar.*
 
 class BasicToolbarActivity : AppCompatActivity() {
@@ -53,8 +54,10 @@ class BasicToolbarActivity : AppCompatActivity() {
         }
 
         binding.recycler.apply {
-            layoutManager = LinearLayoutManager(this@BasicToolbarActivity, LinearLayoutManager.VERTICAL, false)
+            layoutManager =
+                LinearLayoutManager(this@BasicToolbarActivity, LinearLayoutManager.VERTICAL, false)
             adapter = RecyclerAdapter()
+            addItemDecoration(ItemDecoration(context, top = 10, left = 10, right = 10, bottom = 10))
         }
     }
 }
