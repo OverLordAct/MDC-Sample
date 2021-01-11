@@ -21,9 +21,7 @@
             android:layout_height="?attr/actionBarSize"
             app:title="@string/app_name"
             app:menu="@menu/toolbar_main_menu"
-            app:navigationIcon="@drawable/abc_vector_test"
-            android:theme="@style/ThemeOverlay.MDCSample.Toolbar.Custom"
-            />
+            app:navigationIcon="@drawable/abc_vector_test" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
