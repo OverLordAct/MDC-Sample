@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MDCSample">
-        <activity android:name=".toolbar.CollapsingToolbarImageActivity"></activity>
+        <activity android:name=".toolbar.ToolbarWithSearchActivity" />
+        <activity android:name=".toolbar.CollapsingToolbarImageActivity" />
         <activity android:name=".toolbar.CollapsingToolbarActivity" />
         <activity android:name=".toolbar.ScrollingToolbarActivity" />
         <activity android:name=".MainActivity">

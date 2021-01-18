@@ -50,5 +50,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/buttonCollapsingToolbar" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSearchToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Search Toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonImageCollapsingToolbar" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
